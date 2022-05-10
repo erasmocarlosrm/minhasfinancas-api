@@ -21,8 +21,10 @@ import org.springframework.data.jpa.convert.threeten.Jsr310JpaConverters;
 import com.financas.minmhasfinancas.enums.StatuLancamento;
 import com.financas.minmhasfinancas.enums.TipoLancamento;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 
@@ -30,6 +32,8 @@ import lombok.ToString;
 @Table (name = "lancamento", schema ="financas")
 @Data
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Lancamento implements Serializable {
 
 

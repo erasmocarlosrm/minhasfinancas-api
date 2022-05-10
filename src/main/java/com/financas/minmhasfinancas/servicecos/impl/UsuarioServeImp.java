@@ -61,4 +61,10 @@ public class UsuarioServeImp implements UsuarioService {
 		
 	}
 
+	@Override
+	public Optional<Usuario> buscarUsuario(Long id) {
+	
+		return usarioRepositorio.findById(id);
+	}
+
 }
